@@ -1,6 +1,6 @@
 {
-  "name": "@jitsi/robotjs",
-  "version": "0.6.13",
+  "name": "robotjs",
+  "version": "0.6.14",
   "description": "Node.js Desktop Automation.",
   "main": "index.js",
   "typings": "index.d.ts",
@@ -10,16 +10,16 @@
     "test-keyboard": "node test/keyboard.js",
     "test:win32": "jasmine test/**/*.js",
     "install": "node-gyp-build",
-    "prebuild": "prebuildify -t 16.0.0 --napi --strip",
-    "prebuild-darwin-universal": "prebuildify -t 16.0.0 --napi --strip --arch x64+arm64",
-    "prebuild-linux-x64": "prebuildify -t 16.0.0 --napi --strip",
-    "prebuild-linux-arm64": "prebuildify -t 16.0.0 --napi --strip",
-    "prebuild-win32-x86": "prebuildify -t 16.0.0 --napi --strip",
-    "prebuild-win32-x64": "prebuildify -t 16.0.0 --napi --strip"
+    "prebuild": "prebuildify -t 18.0.0 -t electron@26.0.0  --napi --strip",
+    "prebuild-darwin-universal": "prebuildify -t 18.0.0 -t electron@26.0.0 --napi --strip --arch x64+arm64",
+    "prebuild-linux-x64": "prebuildify -t 18.0.0  -t electron@26.0.0 --napi --strip",
+    "prebuild-linux-arm64": "prebuildify -t 18.0.0  -t electron@26.0.0 --napi --strip",
+    "prebuild-win32-x86": "prebuildify -t 18.0.0  -t electron@26.0.0 --napi --strip",
+    "prebuild-win32-x64": "prebuildify -t 18.0.0  -t electron@26.0.0 --napi --strip"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jitsi/robotjs.git"
+    "url": "https://github.dev/eth-stack/robotjs"
   },
   "keywords": [
     "Automation",
@@ -42,14 +42,12 @@
   "license": "MIT",
   "gypfile": true,
   "binary": {
-    "napi_versions": [
-      3
-    ]
+    "napi_versions": [3]
   },
   "bugs": {
-    "url": "https://github.com/jitsi/robotjs/issues"
+    "url": "https://github.com/eth-stack/robotjs/issues"
   },
-  "homepage": "https://github.com/jitsi/robotjs",
+  "homepage": "https://github.com/eth-stack/robotjs",
   "dependencies": {
     "node-addon-api": "^4.2.0",
     "node-gyp-build": "^4.3.0"
