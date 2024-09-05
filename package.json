@@ -44,11 +44,11 @@
   "homepage": "https://github.com/eth-stack/robotjs",
   "dependencies": {
     "node-addon-api": "^4.2.0",
-    "node-gyp-build": "^4.3.0"
+    "node-gyp-build": "^4.8.2"
   },
   "devDependencies": {
     "jasmine": "^2.99.0",
-    "prebuildify": "^5.0.0",
+    "prebuildify": "^6.0.1",
     "run-script-os": "^1.0.3",
     "tape": "^4.8.0"
   }
